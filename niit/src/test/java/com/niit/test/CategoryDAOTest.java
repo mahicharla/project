@@ -37,7 +37,7 @@ static CategoryDAO categoryDAO;
 		
 		assertTrue("Problem in Adding Category",categoryDAO.addCategory(category));
 	}
-	
+	@Ignore
 	@Test
 	public void updateCategoryTest()
 	{
@@ -52,7 +52,7 @@ static CategoryDAO categoryDAO;
 		Category category=categoryDAO.getCategory(6);
 		assertTrue("Problem in deletion of category", categoryDAO.deleteCategory(category));
 	}
-	
+	@Ignore
 	@Test
 	public void listCategoriesTest() {
 		List<Category> list =categoryDAO.listCategories();
